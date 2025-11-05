@@ -1,0 +1,13 @@
+
+@import "tailwindcss";
+
+:root {
+  --bg-dark: #0e0e0e;
+  --panel-dark: #141414;
+  --muted: #9ca3af;
+  --accent: #fbbf24; /* yellow */
+  --cyan: #06b6d4;
+}
+body {
+  background: var(--bg-dark);
+}
