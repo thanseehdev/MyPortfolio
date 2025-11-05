@@ -15,47 +15,23 @@ export default function Sidebar() {
 
         <div className="w-full border-t border-gray-700 my-6"></div>
 
-        <div className="space-y-3 text-sm">
-          <a href="mailto:thanseehdev@gmail.com" className="flex items-center gap-3 bg-gray-800 p-3 rounded-lg">
-            <span className="w-10 h-10 rounded-md bg-[#111] flex items-center justify-center">
-              <FaEnvelope /> {/* Email Icon */}
-            </span>
-            <div>
-              <div className="text-xs text-gray-500">EMAIL</div>
-              <div className="truncate text-sm">thanseehdev@gmail.com</div>
+       <div className="space-y-3 w-full text-sm">
+        {/* Contact Links */}
+        {[
+          { icon: <FaEnvelope />, label: "EMAIL", value: "thanseehdev@gmail.com", href: "mailto:thanseehdev@gmail.com" },
+          { icon: <FaGithub />, label: "GITHUB", value: "github.com/thanseehdev", href: "https://github.com/thanseehdev" },
+          { icon: <FaLinkedin />, label: "LINKEDIN", value: "linkedin.com/in/Thanseeh", href: "https://linkedin.com/in/thanseeh-7aa934305" },
+          { icon: <FaCode />, label: "LEETCODE", value: "leetcode.com/...", href: "https://leetcode.com/u/cardrift/" }
+        ].map((item, i) => (
+          <a key={i} href={item.href} target="_blank" rel="noreferrer" className="flex items-center gap-3 bg-gray-800 p-3 rounded-lg hover:bg-gray-700 transition-colors">
+            <span className="w-10 h-10 rounded-md bg-[#111] flex items-center justify-center">{item.icon}</span>
+            <div className="truncate">
+              <div className="text-xs text-gray-500">{item.label}</div>
+              <div className="text-sm truncate">{item.value}</div>
             </div>
           </a>
-
-          <a href="https://github.com/thanseehdev" target="_blank" rel="noreferrer" className="flex items-center gap-3 bg-gray-800 p-3 rounded-lg">
-            <span className="w-10 h-10 rounded-md bg-[#111] flex items-center justify-center">
-              <FaGithub /> {/* Github Icon */}
-            </span>
-            <div>
-              <div className="text-xs text-gray-500">GITHUB</div>
-              <div className="truncate text-sm">github.com/thanseehdev</div>
-            </div>
-          </a>
-
-          <a href="https://linkedin.com/in/thanseeh-7aa934305" target="_blank" rel="noreferrer" className="flex items-center gap-3 bg-gray-800 p-3 rounded-lg">
-            <span className="w-10 h-10 rounded-md bg-[#111] flex items-center justify-center">
-              <FaLinkedin /> {/* LinkedIn Icon */}
-            </span>
-            <div>
-              <div className="text-xs text-gray-500">LINKEDIN</div>
-              <div className="truncate text-sm">linkedin.com/in/Thanseeh</div>
-            </div>
-          </a>
-
-          <a href="https://leetcode.com/u/cardrift/" target="_blank" rel="noreferrer" className="flex items-center gap-3 bg-gray-800 p-3 rounded-lg">
-            <span className="w-10 h-10 rounded-md bg-[#111] flex items-center justify-center">
-              <FaCode /> {/* Leetcode Icon */}
-            </span>
-            <div>
-              <div className="text-xs text-gray-500">LEETCODE</div>
-              <div className="truncate text-sm">leetcode.com/...</div>
-            </div>
-          </a>
-        </div>
+        ))}
+      </div>
       </div>
     </aside>
   );
