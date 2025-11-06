@@ -3,13 +3,12 @@ import SkillBadge from "../components/Skills";
 import { motion } from "framer-motion";
 
 export default function About() {
-    const skills = ["React", "Node.js", "Express", "MongoDB", "JavaScript", "HTML/CSS", "Git", "GitHub", "REST API", "TypeScript", "PostgreSQL", "Docker"];
+    const skills = ["React", "Node.js", "Express", "MongoDB", "JavaScript", "HTML/CSS","EJS","Bootstrap", "Git", "GitHub", "REST API"];
+    const familiarWith = ["TypeScript", "PostgreSQL", "Docker"];
 
     return (
         <div className="bg-[#111] rounded-b-2xl p-6 md:p-8">
             <div className="flex flex-col md:flex-row gap-6">
-
-                {/* Left Content */}
                 <div className="flex-1">
                     <h3 className="text-gray-400">Hello,</h3>
                     <h1 className="text-3xl md:text-5xl font-extrabold text-white mt-2">
@@ -26,13 +25,22 @@ export default function About() {
 
                     <div className="mt-8">
                         <h3 className="text-2xl font-bold">Skills</h3>
+                        <div className="w-14 h-1 bg-yellow-400 rounded mt-2 mb-4"></div>
                         <div className="flex flex-wrap gap-2 md:gap-3 mt-4">
                             {skills.map(s => <SkillBadge key={s} label={s} />)}
                         </div>
                     </div>
+
+                    {/* Familiar With Section */}
+                    <div className="mt-8">
+                        <h3 className="text-2xl font-bold">Familiar With</h3>
+                        <div className="w-14 h-1 bg-cyan-400 rounded mt-2 mb-4"></div>
+                        <div className="flex flex-wrap gap-2 md:gap-3 mt-4">
+                            {familiarWith.map(s => <SkillBadge key={s} label={s} />)}
+                        </div>
+                    </div>
                 </div>
 
-                {/* Right Image */}
                 <div className="w-full md:w-72 flex items-center justify-center mt-6 md:mt-0">
                     <img src="/Gemini_Generated_Image_u579h2u579h2u579.png" alt="robot" className="object-contain w-full h-full" />
                 </div>
@@ -40,4 +48,5 @@ export default function About() {
         </div>
     );
 }
+
 

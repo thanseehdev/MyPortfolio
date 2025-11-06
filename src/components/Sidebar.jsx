@@ -16,11 +16,10 @@ export default function Sidebar() {
         <div className="w-full border-t border-gray-700 my-6"></div>
 
        <div className="space-y-3 w-full text-sm">
-        {/* Contact Links */}
         {[
           { icon: <FaEnvelope />, label: "EMAIL", value: "thanseehdev@gmail.com", href: "mailto:thanseehdev@gmail.com" },
           { icon: <FaGithub />, label: "GITHUB", value: "github.com/thanseehdev", href: "https://github.com/thanseehdev" },
-          { icon: <FaLinkedin />, label: "LINKEDIN", value: "linkedin.com/in/Thanseeh", href: "https://linkedin.com/in/thanseeh-7aa934305" },
+          { icon: <FaLinkedin />, label: "LINKEDIN", value: "linkedin.com/in/thanseeh", href: "https://linkedin.com/in/thanseeh-7aa934305" },
           { icon: <FaCode />, label: "LEETCODE", value: "leetcode.com/...", href: "https://leetcode.com/u/cardrift/" }
         ].map((item, i) => (
           <a key={i} href={item.href} target="_blank" rel="noreferrer" className="flex items-center gap-3 bg-gray-800 p-3 rounded-lg hover:bg-gray-700 transition-colors">
