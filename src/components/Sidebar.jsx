@@ -7,7 +7,7 @@ export default function Sidebar() {
       <div className="flex flex-col items-center">
         <div className="w-32 h-32 rounded-2xl overflow-hidden bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center">
           {/* replace src with your avatar */}
-          <img src="https://avatars.githubusercontent.com/u/000000?v=4" alt="profile" className="w-full h-full object-cover"/>
+          <img src="/PortFolio_Image2.jpg" alt="profile" className="w-full h-full object-cover"/>
         </div>
 
         <h2 className="mt-4 text-2xl font-extrabold">Thanseeh</h2>
