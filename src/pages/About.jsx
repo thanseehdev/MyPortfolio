@@ -3,7 +3,7 @@ import SkillBadge from "../components/Skills";
 import { motion } from "framer-motion";
 
 export default function About() {
-    const skills = ["React", "Node.js", "Express", "MongoDB", "JavaScript", "HTML/CSS","EJS","Bootstrap", "Git", "GitHub", "REST API"];
+    const skills = ["React", "Node.js", "Express", "MongoDB", "JavaScript", "HTML/CSS", "EJS", "Bootstrap", "Git", "GitHub", "REST API"];
     const familiarWith = ["TypeScript", "PostgreSQL", "Docker"];
 
     return (
@@ -15,7 +15,12 @@ export default function About() {
                         I'm <motion.span className="text-yellow-400 inline-block" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }}>Thanseeh</motion.span>
                     </h1>
                     <p className="text-gray-300 mt-2 font-semibold">Web Developer</p>
-                    <button className="mt-6 bg-gray-700 hover:bg-gray-600 px-5 py-2 rounded-full transition-colors">Download CV</button>
+                    
+                    <a href="/Thanseeh-CV.pdf" download>
+                        <button className="mt-6 bg-gray-700 hover:bg-gray-600 px-5 py-2 rounded-full transition-colors">
+                            Download CV
+                        </button>
+                    </a>
 
                     <div className="mt-8">
                         <h2 className="text-2xl font-bold">About Me</h2>
