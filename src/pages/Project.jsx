@@ -14,7 +14,7 @@ const mainProjects = [
     link: "https://github.com/thanseehdev/ThanafWatches-ecommerce",
   },
   {
-    title: "Coming Soon...",
+    title: "",
     description: "",
     image: "",
     link: "#",
