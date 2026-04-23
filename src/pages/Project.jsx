@@ -30,13 +30,13 @@ const miniProjects = [
   },
   {
     title: "Crypto Price Tracker",
-    description: "EJS, Bootstrap, ExpressJS",
+    description: "EJS, CoinGecko API, NodeJS",
     image: "/Screenshot (251).png",
     link: "https://cryptoliveprice.onrender.com",
   },
   {
     title: "CasioF91W",
-    description: "ReactJS, TailwindCSS,",
+    description: "ReactJS, TailwindCSS",
     image: "/Screenshot (248).png",
     link: "https://casiof91w.vercel.app",
   },
