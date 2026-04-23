@@ -35,10 +35,10 @@ const miniProjects = [
     link: "#",
   },
   {
-    title: "Facebook Static Clone",
-    description: "HTML, CSS",
-    image: "/Screenshot (148).png",
-    link: "#",
+    title: "CasioF91W",
+    description: "ReactJS, TailwindCSS,",
+    image: "/Screenshot (248).png",
+    link: "https://casiof91w.vercel.app",
   },
 ];
 

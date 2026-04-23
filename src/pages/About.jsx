@@ -16,7 +16,7 @@ export default function About() {
                     </h1>
                     <p className="text-gray-300 mt-2 font-semibold">Web Developer</p>
                     
-                    <a href="/Thanseeh-CV2.pdf" download>
+                    <a href="/newThanseehCV2.pdf" download>
                         <button className="mt-6 bg-gray-700 hover:bg-gray-600 px-5 py-2 rounded-full transition-colors">
                             Download CV
                         </button>
