@@ -11,3 +11,13 @@
 body {
   background: var(--bg-dark);
 }
+/* Fix accidental cursor in UI */
+/* GLOBAL FIX */
+*:not(input):not(textarea) {
+  caret-color: transparent;
+}
+
+/* INPUT FIX */
+input, textarea {
+  caret-color: auto;
+}
