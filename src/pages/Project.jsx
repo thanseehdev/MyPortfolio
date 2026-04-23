@@ -31,8 +31,8 @@ const miniProjects = [
   {
     title: "Crypto Price Tracker",
     description: "EJS, Bootstrap, ExpressJS",
-    image: "/Screenshot (144).png",
-    link: "#",
+    image: "/Screenshot (251).png",
+    link: "https://cryptoliveprice.onrender.com",
   },
   {
     title: "CasioF91W",
